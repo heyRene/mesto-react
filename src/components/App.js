@@ -48,7 +48,6 @@ function App() {
             name="avatar"
             title="Обновить аватар"
             onClose={closeAllPopups}
-            buttonName="Сохранить"
           >
             <fieldset className="popup__fieldset popup__fieldset_type_avatar">
               <input
@@ -71,7 +70,6 @@ function App() {
             name="edit"
             title="Редактировать профиль"
             onClose={closeAllPopups}
-            buttonName="Сохранить"
           >
             <fieldset className="popup__fieldset">
               <input
@@ -107,7 +105,6 @@ function App() {
             name="add"
             title="Новое место"
             onClose={closeAllPopups}
-            buttonName="Сохранить"
           >
             <fieldset className="popup__fieldset">
               <input
