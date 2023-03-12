@@ -1,5 +1,5 @@
 # Проект "Место" на React
-**Ссылка на проект:**
+**Ссылка на проект:**  
 https://heyrene.github.io/mesto-react/
 
 ## Описание
@@ -24,9 +24,9 @@ https://heyrene.github.io/mesto-react/
 * валидация форм
 
 ### Установка и запуск
-npm i - установка зависимостей
-npm run start - запуск проекта
-npm run build - запуск сборки проекта
+`npm i` - установка зависимостей  
+`npm run start` - запуск проекта  
+`npm run build` - запуск сборки проекта  
 
 
 
