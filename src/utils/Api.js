@@ -1,4 +1,4 @@
-class Api {
+export default class Api {
   constructor(options) {
     this._headers = options.headers;
     this._url = options.url;
@@ -91,4 +91,3 @@ export const api = new Api({
     "Content-Type": "application/json",
   },
 });
-export default Api;
