@@ -4,6 +4,8 @@ function ImagePopup(props) {
       className={`popup popup_func_preview ${
         props.card.name ? "popup_opened" : ""
       }`}
+      onClick={props.onOverlayClose}
+      onKeyDown={props.onEscClose}
     >
       <figure className="popup__image-container">
         <button
