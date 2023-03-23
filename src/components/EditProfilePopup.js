@@ -4,13 +4,13 @@ import PopupWithForm from "./PopupWithForm";
 
 function EditProfilePopup(props) {
   const currentUser = useContext(currentUserContext);
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
+  const [name, setName] = useState('');
+  const [description, setDescription] = useState('');
 
   useEffect(() => {
     setName(currentUser.name);
     setDescription(currentUser.about);
-  }, [currentUser]);
+  }, [currentUser, props.isOpen]);
 
   function handleChangeName(e) {
     setName(e.target.value);
@@ -38,6 +38,7 @@ function EditProfilePopup(props) {
       <fieldset className="popup__fieldset">
         <input
           onChange={handleChangeName}
+          value={name || ''}
           type="text"
           className="popup__input"
           name="name"
@@ -50,6 +51,7 @@ function EditProfilePopup(props) {
         <span className="popup__input-error" id="name-input-error"></span>
         <input
           onChange={handleChangeDescription}
+          value={description || ''}
           type="text"
           className="popup__input"
           name="occupation"
